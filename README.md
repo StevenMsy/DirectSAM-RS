@@ -36,6 +36,7 @@ Data (Coming Soon) -->
 <p align="center">
 <img src="assets/paper/architecture.png" width="95%">
 </p>
+
 **DirectSAM-RS** is a vision-language foundation model designed for semantic contour extraction in optical remote sensing imagery. It builds on the **DirectSAM** model, which is pretrained on the SA-1B dataset and offers robust contour extraction. However, DirectSAM is **non-interactive** and **class-agnostic**, which limits its use in domain-specific applications like remote sensing.
 
 To address these limitations, DirectSAM-RS introduces:
@@ -52,7 +53,7 @@ DirectSAM-RS is implemented based on the Huggingface framework, with implementat
 <img src="assets/paper/RemoteContour-34k.png" width="100%">
 </p>
 
-We constructed a semantic contour extraction dataset by repurposing existing semantic segmentation datasets with our proposed Mask2Contour **(M2C)** transformation. The **M2C** process produces a total of 34k image-text-contour triplets from LoveDA, iSAID, DeepGlobe, and RefSegRS datasets. We name this resulting dataset **RemoteContour-34k**.
+We constructed a semantic contour extraction dataset by repurposing existing semantic segmentation datasets with our proposed **Mask2Contour (M2C)** transformation. The **M2C** process produces a total of 34k image-text-contour triplets from LoveDA, iSAID, DeepGlobe, and RefSegRS datasets. We name this resulting dataset **RemoteContour-34k**.
 
 The RemoteContour-34k dataset are available for download via BaiduNetdisk.
 
@@ -71,6 +72,7 @@ We validate DirectSAM-RS on three downstream contour extraction datasets: SLSD f
 <p align="center">
 <img src="assets/paper/M2C.png" width="90%">
 </p>
+
 The **Mask2Contour (M2C)** transformation is a simple and effective method for extracting semantic contours from segmentation masks. This approach leverages the `cv2.findContours` function from OpenCV to efficiently convert segmented regions into their corresponding contours.
 
 If you want to convert other semantic segmentation labels into contours, you can refer to the code in the `utils` folder. If your semantic segmentation labels are single-channel like LoveDA, use `utils/M2C_1channel.py`. If your labels are three-channel like iSAID, use `utils/M2C_3channel.py`. You will need to modify the file paths and `category_dict` accordingly when using the scripts.
