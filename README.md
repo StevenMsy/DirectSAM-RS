@@ -9,7 +9,7 @@
 [**Fan Liu (刘凡)**](https://multimodality.group/author/%E5%88%98%E5%87%A1/)✉
 <img src="assets/hhu_logo.png" alt="Logo" width="15"> &nbsp; &nbsp;
 
-[**Chuanyi Zhang (张传一)**](https://samuelcahyawijaya.github.io/)
+[**Chuanyi Zhang (张传一)**](https://ai.hhu.edu.cn/2023/0809/c17670a264073/page.htm)
 <img src="assets/hhu_logo.png" alt="Logo" width="15"> &nbsp; &nbsp;
 [**Yanhui Gu (顾彦慧)**](https://xufengduan.github.io/)
 <img src="assets/nnu_logo.png" alt="Logo" width="13"> &nbsp; &nbsp;
