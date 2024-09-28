@@ -20,7 +20,7 @@
 
 <img src="assets/hhu_logo_text.png" alt="Logo" width="100">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 <img src="assets/hkust_logo_text.png" alt="Logo" width="100"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-<img src="assets/nnu_logo_text.png" alt="Logo" width="120">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+<img src="assets/nnu_logo_text.png" alt="Logo" width="170">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 <img src="assets/griffith_logo_text.png" alt="Logo" width="90"> 
 
 
