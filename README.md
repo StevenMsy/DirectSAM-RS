@@ -11,7 +11,7 @@
 
 [**Chuanyi Zhang (张传一)**](https://ai.hhu.edu.cn/2023/0809/c17670a264073/page.htm)
 <img src="assets/hhu_logo.png" alt="Logo" width="15"> &nbsp; &nbsp;
-[**Yanhui Gu (顾彦慧)**](https://xufengduan.github.io/)
+[**Yanhui Gu (顾彦慧)**](https://komaba461.github.io/gu/)
 <img src="assets/nnu_logo.png" alt="Logo" width="13"> &nbsp; &nbsp;
 [**Shengjie Guo (郭晟杰)**](https://github.com/Shengjie-Guo)
 <img src="assets/nnu_logo.png" alt="Logo" width="13">&nbsp; &nbsp;
