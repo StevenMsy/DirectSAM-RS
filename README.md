@@ -57,14 +57,14 @@ We constructed a semantic contour extraction dataset by repurposing existing sem
 
 The RemoteContour-34k dataset are available for download via BaiduNetdisk.
 
-- **BaiduNetdisk Link**: [Click here to download](https://pan.baidu.com/s/1GDTXU3d-joplPil4A3Rb_Q?pwd=mmsy)
+- **BaiduNetdisk Link**: [Click here to download](https://pan.baidu.com/s/1DFFEZzP8_YZybauQLkenzw?pwd=mmsy)
 - **Extraction Code**: `mmsy`
 
 ## Downstream task datasets
 
 We validate DirectSAM-RS on three downstream contour extraction datasets: SLSD for coastline extraction, Beijing Urban Building Extraction (BUBE), and LRSNY for road extraction. These three downstream task datasets can also be downloaded via BaiduNetdisk.
 
-- **BaiduNetdisk Link**: [Click here to download]()
+- **BaiduNetdisk Link**: [Click here to download](https://pan.baidu.com/s/1Orb_WTXWr8p9kiqj06U7QA?pwd=mmsy)
 - **Extraction Code**: `mmsy`
 
 ## Mask2Contour (M2C) transformation
