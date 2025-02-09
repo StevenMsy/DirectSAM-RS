@@ -55,10 +55,12 @@ DirectSAM-RS is implemented based on the Huggingface framework, with implementat
 
 We constructed a semantic contour extraction dataset by repurposing existing semantic segmentation datasets with our proposed **Mask2Contour (M2C)** transformation. The **M2C** process produces a total of 34k image-text-contour triplets from LoveDA, iSAID, DeepGlobe, and RefSegRS datasets. We name this resulting dataset **RemoteContour-34k**.
 
-The RemoteContour-34k dataset are available for download via BaiduNetdisk.
+The RemoteContour-34k dataset are available for download via BaiduNetdisk or Google Drive.
 
 - **BaiduNetdisk Link**: [Click here to download](https://pan.baidu.com/s/1DFFEZzP8_YZybauQLkenzw?pwd=mmsy)
 - **Extraction Code**: `mmsy`
+
+- **Google Drive Link**: [Click here to download](https://drive.google.com/file/d/1BmSLAASVie93_seg7QdC3Wx2G7NXc_tO/view?usp=sharing)
 
 ## Downstream task datasets
 
@@ -66,6 +68,8 @@ We validate DirectSAM-RS on three downstream contour extraction datasets: SLSD f
 
 - **BaiduNetdisk Link**: [Click here to download](https://pan.baidu.com/s/1Orb_WTXWr8p9kiqj06U7QA?pwd=mmsy)
 - **Extraction Code**: `mmsy`
+
+- **Google Drive Link**: [Click here to download](https://drive.google.com/file/d/1BmSLAASVie93_seg7QdC3Wx2G7NXc_tO/view?usp=sharing)
 
 ## Mask2Contour (M2C) transformation
 
