@@ -73,7 +73,7 @@ We validate DirectSAM-RS on three downstream contour extraction datasets: SLSD f
 ## Mask2Contour (M2C) transformation
 
 <p align="center">
-<img src="assets/paper/M2C.png" width="90%">
+<img src="assets/paper/M2C.png" width="70%">
 </p>
 
 The **Mask2Contour (M2C)** transformation is a simple and effective method for extracting semantic contours from segmentation masks. This approach leverages the `cv2.findContours` function from OpenCV to efficiently convert segmented regions into their corresponding contours.
@@ -82,7 +82,7 @@ If you want to convert other semantic segmentation labels into contours, you can
 
 ### Triplets Sample
 <p align="center">
-<img src="assets/paper/triplet.png" width="70%">
+<img src="assets/paper/triplet.png" width="55%">
 </p>
 The figure illustrates two examples: one constructed from semantic segmentation datasets and the other from referring image segmentation datasets.
 
@@ -90,12 +90,13 @@ The figure illustrates two examples: one constructed from semantic segmentation 
 ## Evaluation Metrics
 
 <p align="center">
-<img src="assets/paper/eval.png" width="70%">
+<img src="assets/paper/eval.png" width="55%">
 </p>
 
 Following **HED**, we used the following evaluation metrics in the experiment: Optimal Dataset Scale (ODS) and Optimal Image Scale (OIS). Based on the $d_{max}$ index and image size $S$, the pixel tolerance $T$ is calculated by $T=EvenCeil(S\times d_{max})$. EvenCeil rounds the input $S \times d_{max}$ up to the nearest even integer. The ODS and OIS were calculated under the tolerance $T$ setting. Additionally, we employed Line Intersection over Union with a 3-pixel dilated kernel (LineIoU@3), following the evaluation metrics of BUBE. 
 
 For instance, given an image of 1024×1024 pixels, the pixel tolerance in both horizontal and vertical directions is 8 pixels. As illustrated in the figure, when calculating Precision (left), let $\hat{y}$ represent the model-predicted edge pixel, depicted in dark blue. A prediction is considered correct if any ground truth pixel falls within the light blue region (representing the tolerance area) or the dark blue region. More formally, if $\exists y \in \mathcal{Y}$ such that $d(y, \hat{y}) \leq \frac{T}{2}$, where $\mathcal{Y}$ is the set of ground truth pixels and $d(\cdot,\cdot)$ is the Euclidean distance, then $\hat{y}$ is counted as a true positive. Conversely, when calculating Recall (right), let $y$ denote the ground truth pixel, depicted in dark green. A ground truth pixel is considered recalled if any predicted pixel lies within the light green region or the dark green region. Formally, if $\exists \hat{y} \in \hat{\mathcal{Y}}$ such that $d(y, \hat{y}) \leq \frac{T}{2}$, where $\hat{\mathcal{Y}}$ is the set of predicted pixels, then $y$ is counted as correctly recalled.
+
 
 
 
