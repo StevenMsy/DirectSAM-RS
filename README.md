@@ -97,6 +97,26 @@ Following **HED**, we used the following evaluation metrics in the experiment: O
 
 For instance, given an image of 1024×1024 pixels, the pixel tolerance in both horizontal and vertical directions is 8 pixels. As illustrated in the figure, when calculating Precision (left), let $\hat{y}$ represent the model-predicted edge pixel, depicted in dark blue. A prediction is considered correct if any ground truth pixel falls within the light blue region (representing the tolerance area) or the dark blue region. More formally, if $\exists y \in \mathcal{Y}$ such that $d(y, \hat{y}) \leq \frac{T}{2}$, where $\mathcal{Y}$ is the set of ground truth pixels and $d(\cdot,\cdot)$ is the Euclidean distance, then $\hat{y}$ is counted as a true positive. Conversely, when calculating Recall (right), let $y$ denote the ground truth pixel, depicted in dark green. A ground truth pixel is considered recalled if any predicted pixel lies within the light green region or the dark green region. Formally, if $\exists \hat{y} \in \hat{\mathcal{Y}}$ such that $d(y, \hat{y}) \leq \frac{T}{2}$, where $\hat{\mathcal{Y}}$ is the set of predicted pixels, then $y$ is counted as correctly recalled.
 
+## Benchmarking
+
+We evaluated the capabilities of DirectSAM-RS under both ZS and FT scenarios. DirectSAMRS consistently delivered superior results, achieving state-of-the-art performance on multiple downstream benchmarks for edge detection. This highlights its robustness and adaptability across diverse tasks, showcasing its potential as a versatile tool for real-world applications.
+
+### Fine-tuning Scenario
+
+<p align="center">
+<img src="assets/paper/ft.png" width="85%">
+</p>
+
+We fine-tuned DirectSAM-RS on the training splits of each benchmark dataset and evaluated its performance on the corresponding validation splits. DirectSAM-RS outperformed previous state-of-the-art methods for road, coastline, and building extraction, achieving impressive ODS metric improvements of 21%, 5%, and 7%, respectively. Visualization of the inference results is provided in the figure above. The model’s exceptional performance across various edge detection tasks highlights its strong practical value and potential for real-world applications.
+
+### Zero-shot Scenario
+
+<p align="center">
+<img src="assets/paper/zs.png" width="85%">
+</p>
+
+We assessed the performance of our DirectSAM-RS model in a ZS scenario across three downstream edge detection tasks, achieving competitive results without the need for task-specific FT. The comparison between DirectSAM-RS ZS and DirectSAM ZS underscored the substantial benefits of incorporating textual semantics. This demonstrates that leveraging language information enhances the generalization capabilities of DirectSAMRS, making it more effective across diverse tasks. Figure 9 illustrates the ZS performance of DirectSAM-RS, where edges of different colors represent the edges of different categories, corresponding to prompts of different categories given to DirectSAM-RS.
+
 
 
 
