@@ -99,7 +99,7 @@ For instance, given an image of 1024×1024 pixels, the pixel tolerance in both h
 
 ## Benchmarking
 
-We evaluated the capabilities of DirectSAM-RS under both ZS and FT scenarios. DirectSAMRS consistently delivered superior results, achieving state-of-the-art performance on multiple downstream benchmarks for edge detection. This highlights its robustness and adaptability across diverse tasks, showcasing its potential as a versatile tool for real-world applications.
+We evaluated the capabilities of DirectSAM-RS under both ZS and FT scenarios. DirectSAM-RS consistently delivered superior results, achieving state-of-the-art performance on multiple downstream benchmarks for edge detection. This highlights its robustness and adaptability across diverse tasks, showcasing its potential as a versatile tool for real-world applications.
 
 ### Fine-tuning Scenario
 
@@ -115,7 +115,8 @@ We fine-tuned DirectSAM-RS on the training splits of each benchmark dataset and 
 <img src="assets/paper/zs.png" width="85%">
 </p>
 
-We assessed the performance of our DirectSAM-RS model in a ZS scenario across three downstream edge detection tasks, achieving competitive results without the need for task-specific FT. The comparison between DirectSAM-RS ZS and DirectSAM ZS underscored the substantial benefits of incorporating textual semantics. This demonstrates that leveraging language information enhances the generalization capabilities of DirectSAMRS, making it more effective across diverse tasks. Figure 9 illustrates the ZS performance of DirectSAM-RS, where edges of different colors represent the edges of different categories, corresponding to prompts of different categories given to DirectSAM-RS.
+We assessed the performance of our DirectSAM-RS model in a ZS scenario across three downstream edge detection tasks, achieving competitive results without the need for task-specific FT. The comparison between DirectSAM-RS ZS and DirectSAM ZS underscored the substantial benefits of incorporating textual semantics. This demonstrates that leveraging language information enhances the generalization capabilities of DirectSAM-RS, making it more effective across diverse tasks. Figure 9 illustrates the ZS performance of DirectSAM-RS, where edges of different colors represent the edges of different categories, corresponding to prompts of different categories given to DirectSAM-RS.
+
 
 
 
